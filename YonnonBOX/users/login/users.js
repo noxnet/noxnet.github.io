@@ -15,7 +15,7 @@ var Validate = function() {
             } else {
               document.cookie = "user=NOSIGN";
               alert("LOGIN UNSUCCESSFUL");
-              window.location.href = "YonnonBOX";
+              window.location.href = "noxnet.github.io/YonnonBOX/";
             }
         }
 
