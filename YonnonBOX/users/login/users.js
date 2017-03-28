@@ -19,7 +19,7 @@ var Validate = function() {
                    document.cookie = "user=public_non";
                    alert("ACCESSING PUBLIC USER");
                    window.location.href = "noxnet.github.io/YonnonBOX/";
-                   location.reload();
+                   window.location.reload();
                }
             }
             if (user === "red_hand") {
@@ -27,13 +27,13 @@ var Validate = function() {
                      document.cookie = "user=RED_hand";
                      alert("ACCESSING RED HAND");
                      window.location.href = "noxnet.github.io/YonnonBOX/";
-                     location.reload();
+                     window.location.reload();
                  }
             } else {
               document.cookie = "user=NOSIGN";
               alert("LOGIN UNSUCCESSFUL");
               window.location.href = "noxnet.github.io/YonnonBOX/";
-              location.reload();
+              window.location.reload();
             }
         }
 
