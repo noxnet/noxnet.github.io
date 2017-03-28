@@ -1,6 +1,6 @@
 var Validate = function() {
-            var user = document.getElementById["username"].value;
-            var pass = document.getElementById["password"].value;
+            var user = document.form["access_granted"]["username"].value;
+            var pass = document.form["access_granted"]["password"].value;
             if (user === "public_non") {
                if (pass === "vbdzxy") {
                    document.cookie = "user=public_non";
