@@ -10,12 +10,7 @@ var login = function(username, password) {
             var pass = document.forms["access_granted"]["username"].value;
             if (user == username && pass == password) {
                   alert("LOGIN SUCCESSFUL");
-                  if (user == "public_non") {
-                      document.cookie = "user=public_non";           
-                  }
-                  if (user == "red_hand") {
-                      document.cookie = "user=red_hand";           
-                  }
+                  document.cookie = "user=" + user;
                   window.location.href = "noxnet.github.io/YonnonBOX/";
                   window.location.reload();
                   return true;
