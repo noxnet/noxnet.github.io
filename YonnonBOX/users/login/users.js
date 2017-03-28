@@ -15,6 +15,7 @@ var login = function(username, password) {
                   window.location.reload();
                   return true;
             } else {
+               alert("LOGIN FAILED");
                document.cookie = "STATUS=NOSIGN";
                window.location.href = "noxnet.github.io/YonnonBOX/";
                window.location.reload();
