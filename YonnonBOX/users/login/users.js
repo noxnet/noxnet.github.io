@@ -5,36 +5,44 @@ var checkVar = function(vari) {
                return false;           
             }
 }
+usrnames = ["public_non", "red_hand"];
+pswords = ["vbdzxy", "gortzonx"];
 var login = function(username, password) {
             var user = document.forms["access_granted"]["username"].value;
             var pass = document.forms["access_granted"]["username"].value;
             if (user == username && pass == password) {
-                  document.cookie = "user=" + user;
-                  window.location.href = "noxnet.github.io/YonnonBOX/";
-                  window.location.reload();
                   return true;
             } else {
                return false;
             }
 }
 var Validate = function() {
-            var varnums = ["a", "b"];
-            var a = login("public_non", "vbdxzy");
-            var b = login("red_hand", "gortzonx");
             var count = 0;
             var j = 0;
-            for (var i = 0; i < varnums.length; i++) {
-                  if (checkVar(varnums[j] == true) {
-                       count++
-                       j++
-                  }
+            for (var i = 0; i < usrnames.length; i++) {
+                 if (login(usrnames[j], pswords[j]) == true;) {
+                      if (usrnames[j] == "public_non") {
+                          alert("LOGIN SUCCESSFUL: public_non");
+                          document.cookie = "user=" + usrnames[j];
+                          window.location.href = "noxnet.github.io/YonnonBOX/";
+                          window.location.reload();           
+                      } else if (usrnames[j] == "red_hand") {
+                         document.cookie = "user=" + usrnames[j];
+                         window.location.href = "noxnet.github.io/YonnonBOX/";
+                         window.location.reload();            
+                      }
+                      count++;
+                      j++;
+                 } else {
+                    j++;           
+                 }
             }
-            if (count == varnums.length) {
-                alert("INVALID LOGIN, OR LOGIN NOT REGISTERED");
+            if (count != 0) {
+                alert("LOGIN FAILED");
+                document.cookie = "STATUS=NOSIGN";
                 window.location.href = "noxnet.github.io/YonnonBOX/";
-                window.location.reload();                 
-            } else if (count != varnums.length) {
-                nothing;            
+                window.location.reload();
             }
+            
 }
 
