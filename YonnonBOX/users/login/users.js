@@ -5,12 +5,14 @@ var Validate = function() {
                if (pass === "vbdzxy") {
                    document.cookie = "user=public_non";
                    alert("ACCESSING PUBLIC USER");
+                   window.location.href = "noxnet.github.io/YonnonBOX/";
                }
             }
             if (user === "red_hand") {
                  if (pass === "noxuser") {
                      document.cookie = "user=RED_hand";
                      alert("ACCESSING RED HAND");
+                     window.location.href = "noxnet.github.io/YonnonBOX/";
                  }
             } else {
               document.cookie = "user=NOSIGN";
