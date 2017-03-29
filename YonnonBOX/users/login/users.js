@@ -18,6 +18,8 @@ var login = function(username, password) {
                   }
             } else {
                alert("LOGIN FAILED");
+               window.location.href = "wrong.html";
+               location.reload();
             }
 }
 var Validate = function() {
