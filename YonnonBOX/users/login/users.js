@@ -18,7 +18,7 @@ var login = function(username, password) {
                   }
             } else {
                alert("LOGIN FAILED");
-               window.location.href = "wrong.html";
+               window.location.href = "noxnet.github.io/YonnonBOX/users/login/wrong.html";
                location.reload();
             }
 }
