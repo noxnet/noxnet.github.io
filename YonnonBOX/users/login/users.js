@@ -10,22 +10,21 @@ var login = function(username, password) {
             var pass = document.forms["access_granted"]["username"].value;
             if (user == username) {
                   if (pass == password) {
-                      alert("LOGIN SUCCESSFUL");
-                      document.cookie = "user=" + user;
-                      window.location.href = "noxnet.github.io/YonnonBOX/";
-                      window.location.reload();
                       return true;
                   }
             } else {
-               alert("LOGIN FAILED");
-               document.cookie = "STATUS=NOSIGN";
-               window.location.href = "noxnet.github.io/YonnonBOX/";
-               window.location.reload();
                return false;
             }
 }
 var Validate = function() {
-       login("public_non", "vbdxzy");
-       login("red_hand", "gortzonx");
+        var nums = 2;
+        var x = login("public_non", "vbdxzy");
+        var y = login("red_hand", "gortzonx");
+        var count = 0;
+        var j = 0;
+        for (var i = 0; i < nums; i++) { 
+                    
+        }
+                      
 }
 
