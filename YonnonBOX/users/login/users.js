@@ -17,13 +17,37 @@ var login = function(username, password) {
             }
 }
 var Validate = function() {
-        var nums = 2;
+        var nums = ["x", "y"];
         var x = login("public_non", "vbdxzy");
         var y = login("red_hand", "gortzonx");
         var count = 0;
-        var j = 0;
-        for (var i = 0; i < nums; i++) { 
-                    
+        var loginAs;
+        if (x == true) {
+           count++;
+           loginAs = "public_non";
+        } else {
+           nothing;           
+        }
+        if (y == true) {
+            count++
+            loginAs = "red_hand";        
+        } else {
+            nothing;           
+        }
+        if (count == 1) {
+            alert("LOGIN SUCCESSFUL");
+            if (loginAs == "public_non") {
+                document.cookie = "user=public_non";
+                window.location.href = "noxnet.github.io/YonnonBOX/";
+                location.reload();
+            }
+            if (loginAs == "red_hand") {
+                document.cookie = "user=public_non";
+                window.location.href = "noxnet.github.io/YonnonBOX/";
+                location.reload();
+            }
+        } else {
+           alert("LOGIN FAILED");           
         }
                       
 }
