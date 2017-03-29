@@ -8,12 +8,14 @@ var checkVar = function(vari) {
 var login = function(username, password) {
             var user = document.forms["access_granted"]["username"].value;
             var pass = document.forms["access_granted"]["username"].value;
-            if (user == username && pass == password) {
-                  alert("LOGIN SUCCESSFUL");
-                  document.cookie = "user=" + user;
-                  window.location.href = "noxnet.github.io/YonnonBOX/";
-                  window.location.reload();
-                  return true;
+            if (user == username) {
+                  if (pass == password) {
+                      alert("LOGIN SUCCESSFUL");
+                      document.cookie = "user=" + user;
+                      window.location.href = "noxnet.github.io/YonnonBOX/";
+                      window.location.reload();
+                      return true;
+                  }
             } else {
                alert("LOGIN FAILED");
                document.cookie = "STATUS=NOSIGN";
