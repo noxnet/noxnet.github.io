@@ -12,10 +12,9 @@ var login = function() {
                 var usr = "user=" + user;
                 document.cookie = usr;
                 window.location.href = "noxnet.github.io/YonnonBOX/users/login/right.html";
-                location.reload();
+                
             } else {
                window.location.href = "noxnet.github.io/YonnonBOX/users/login/wrong.html";
-               location.reload();
             }
 }
 var Validate = function() {
