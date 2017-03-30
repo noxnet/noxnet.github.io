@@ -4,7 +4,7 @@ var Validate = function() {
        if (pass == "vbdxj6578$mN") {
            var usr = "user=" + user;
            document.cookie = usr;
-           alert("Welcome, " + user;);
+           alert(document.cookie);
        }
        /*alert(user);
        alert(pass);*/
