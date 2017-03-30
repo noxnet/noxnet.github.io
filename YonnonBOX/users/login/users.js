@@ -15,7 +15,8 @@ var Validate = function() {
        var pass = document.forms["access_granted"]["password"].value;
        if (pass == "vbdxj6578$mN") {
            var usr = "user=" + user;
-           alert(usr);
+           document.cookie = usr;
+           alert(document.cookie);
        }
        /*alert(user);
        alert(pass);*/
