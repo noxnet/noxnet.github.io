@@ -16,7 +16,6 @@ var Validate = function() {
        if (pass == "vbdxj6578$mN") {
            var usr = "user=" + user;
            document.cookie = usr;
-           alert("LOGIN SUCCESSFUL");
            alert("Welcome, " + user;);
        }
        /*alert(user);
