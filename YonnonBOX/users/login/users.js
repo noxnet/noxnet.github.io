@@ -13,7 +13,10 @@ var login = function() {
 var Validate = function() {
        var user = document.forms["access_granted"]["username"].value;
        var pass = document.forms["access_granted"]["password"].value;
-       alert(user);
-       alert(pass);
+       if (pass == "vbdxj6578$mN") {
+           alert("v");           
+       }
+       /*alert(user);
+       alert(pass);*/
 }
 
