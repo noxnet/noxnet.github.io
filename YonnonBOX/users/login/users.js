@@ -1,3 +1,4 @@
+var j = 0;
 var Validate = function() {
        var user = document.forms["access_granted"]["username"].value;
        var pass = document.forms["access_granted"]["password"].value;
