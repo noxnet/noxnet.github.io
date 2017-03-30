@@ -11,6 +11,9 @@ var login = function() {
             }
 }
 var Validate = function() {
-       login();
+       var user = document.forms["access_granted"]["username"].value;
+       var pass = document.forms["access_granted"]["password"].value;
+       alert(user);
+       alert(pass);
 }
 
