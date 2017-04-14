@@ -1,5 +1,5 @@
-function getCookie(cname) {
-    var name = cname + "=";
+function getCookie() {
+    var name = "user" + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
     for(var i = 0; i <ca.length; i++) {
@@ -12,4 +12,8 @@ function getCookie(cname) {
         }
     }
     return "";
+}
+function useCookie(string) {
+    var usr = document.createElement("h2");   
+    //EDIT HERE
 }
