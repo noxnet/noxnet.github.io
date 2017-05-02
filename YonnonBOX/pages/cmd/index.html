@@ -37,6 +37,9 @@
        .big {
           font-size: 24; 
        }
+       .cmd_box {
+          border: 2px solid white
+       }
      </style>
   </head>
   <body style="background-color: black;">
@@ -68,9 +71,11 @@
             <h3 class="center">STEP 1: ACCESSING COMMAND PROMPT RESTRICTED</h3>
             <p class="white_text">Some administrators hide the command prompt icon so most of us cannot get to the prompt. The best way to access it afterward is to use a<br>
             batch file. To create a this batch file, go to notepad and type the code:<br></p>
-            <h6 class="green_text">@echo off<br>start cmd.exe<br>exit<br></h6>
+            <h5 class="green_text">@echo off<br>start cmd.exe<br>exit<br></h6>
             <p class="white_text">And save the file as <span class="green_text">cmd.bat</span> and run the file later to get the command prompt. The command prompt should look like this:<br>
               <span class="green_text big">C:\directory\directory\></span><br>Or you'll see a prompt like this: <br><span class="green_text big">C:\Windows\System32\></span></p>
+            <p class="white_text">And running your <span class="green_text">cmd.bat</span> you'll get the command prompt. The command prompt, (after the cls command) looks like this:<br></p>
+            <div class="cmd_box"></div>
           </div>
         </section>
       </article>
